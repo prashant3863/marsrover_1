@@ -12,8 +12,10 @@ module MarsRover
         @direction = "W"
       elsif @direction == "S"
         @direction = "E"
-      else
+      elsif @direction == "E" 
         @direction = "N"
+      else
+        @direction = "S"
       end
     end
 

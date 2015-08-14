@@ -5,6 +5,7 @@ module MarsRover
   let(:rover_north) { Rover.new(1, 2, "N") }
   let(:rover_south) { Rover.new(1, 2, "S") }
   let(:rover_east) { Rover.new(1, 2, "E") }
+  let(:rover_west) { Rover.new(1, 2, "W") }
 
     context "Left turn" do 
       it "turns 90 deg. to the left when facing north" do
@@ -15,8 +16,12 @@ module MarsRover
         expect(rover_south.left).to eq("E")
       end
 
-      it "turns 90 deg. to the left when facing south" do
+      it "turns 90 deg. to the left when facing east" do
         expect(rover_east.left).to eq("N")
+      end
+
+      it "turns 90 deg. to the left when facing west" do
+        expect(rover_west.left).to eq("S")
       end
     end
 
