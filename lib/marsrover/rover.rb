@@ -8,7 +8,11 @@ module MarsRover
     end
 
     def left
-      @direction = "W"
+      if @direction == "N"
+        @direction = "W"
+      else
+        @direction = "E"
+      end
     end
 
     def right
