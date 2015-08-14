@@ -25,8 +25,14 @@ module MarsRover
       end
     end
 
-    it "turns 90 deg. to the right when right is called" do
-      expect(rover_north.right).to eq("E")
+    context "Right turn" do
+      it "turns 90 deg. to the right when facing north" do
+        expect(rover_north.right).to eq("E")
+      end
+
+      it "turns 90 deg. to the right when facing south" do
+        expect(rover_south.right).to eq("W")
+      end
     end
   end
 end
