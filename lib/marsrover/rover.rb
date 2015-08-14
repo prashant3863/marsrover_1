@@ -36,8 +36,10 @@ module MarsRover
         @ycord = @ycord + 1
       elsif @direction == "S"
         @ycord = @ycord - 1
-      else
+      elsif @direction == "E"
         @xcord = @xcord + 1
+      else
+        @xcord = @xcord - 1
       end
     end
   end

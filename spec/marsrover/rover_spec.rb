@@ -55,6 +55,10 @@ module MarsRover
       it "moves one step facing east" do
         expect(rover_east.move).to eq(2)
       end
+
+      it "moves one step facing west" do
+        expect(rover_west.move).to eq(0)
+      end
     end
   end
 end
