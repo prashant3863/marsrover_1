@@ -10,5 +10,9 @@ module MarsRover
     def left
       @direction = "W"
     end
+
+    def right
+      @direction = "E"
+    end
   end
 end
