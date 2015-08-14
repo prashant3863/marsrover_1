@@ -42,5 +42,9 @@ module MarsRover
         expect(rover_west.right).to eq("N")
       end
     end
+
+    it "moves one step facing north when move is called" do
+      expect(rover_north.move).to eq(3)
+    end
   end
 end

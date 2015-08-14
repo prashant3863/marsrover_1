@@ -30,5 +30,9 @@ module MarsRover
         @direction = "N"
       end
     end
+
+    def move
+      @ycord = @ycord + 1
+    end
   end
 end
