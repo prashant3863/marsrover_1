@@ -22,8 +22,10 @@ module MarsRover
     def right
       if @direction == "N"
         @direction = "E"
-      else
+      elsif @direction == "S"
         @direction = "W"
+      else
+        @direction = "S"
       end
     end
   end

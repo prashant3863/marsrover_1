@@ -33,6 +33,10 @@ module MarsRover
       it "turns 90 deg. to the right when facing south" do
         expect(rover_south.right).to eq("W")
       end
+
+      it "turns 90 deg. to the right when facing east" do
+        expect(rover_east.right).to eq("S")
+      end
     end
   end
 end
