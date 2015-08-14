@@ -32,7 +32,11 @@ module MarsRover
     end
 
     def move
-      @ycord = @ycord + 1
+      if @direction == "N"
+        @ycord = @ycord + 1
+      else
+        @ycord = @ycord - 1
+      end
     end
   end
 end
