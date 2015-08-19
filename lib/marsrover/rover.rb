@@ -1,6 +1,6 @@
 module MarsRover
   class Rover
-
+    # it determines the direction change for the rover
     def initialize(xcord, ycord, direction)
       @xcord = xcord
       @ycord = ycord

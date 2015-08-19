@@ -10,7 +10,7 @@ Assume that the square directly North from (x, y) is (x, y+1).
 
 ##Build
 
-1. git clone "link"
+1. git clone https://github.com/prashant3863/marsrover_1.git
 2. install bundle
 3. bundle install rspec
 4. bundle exec rake
